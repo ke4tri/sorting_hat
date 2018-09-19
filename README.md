@@ -1,5 +1,5 @@
 # Sorting Hat Webapp
-Use the Sorting Hat Web app to randomly select a 'House' for each student who has been generated.
+# Use the Sorting Hat Web app to randomly select a 'House' for each student who has been generated.
 
 * You must use Boostrap 4 to style your page components.
 * You should apply responsive design to your page (aka your app should be designed to work on small screens)
