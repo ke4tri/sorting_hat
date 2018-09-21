@@ -10,8 +10,24 @@ startButtonElem.addEventListener("click", function(){
     stringForm1();
 });
 
-// This is creating new forms each time it is clicked
-// Need to stop that and only generate one
+// let kidFunction = (kidName,houseName) => {
+let kidFunction = () => {
+    const kidCardElem = document.getElementById("makeKidButton");
+    kidCardElem.addEventListener("click", function(){
+        let formValue = document.getElementById("studentName").value;
+
+        let stringForm3 = `<div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <h5 class="card-title">${formValue}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">${'place'}</h6>
+        </div>
+        <button type="submit" id="makeKidButton" class="btn btn-primary mb-2  mt-1 p-3">Expel</button>
+        </div> `
+        printToDom(stringForm3, "cardDiv")
+        console.log("This card thing is working");
+    });
+};
+
 const stringForm1 = () => {
     let stringForm2 = ` <div class="form-group mb-2 ml-3 p-3 border border-white>
     <label for="staticEmail2" class="sr-only">Student Name</label>
@@ -22,30 +38,10 @@ const stringForm1 = () => {
     </div>
     <div class="form-group mx-sm-3 mb-2 ml-5">
     </div>
-    `
-    // console.log("string print to dom isn't working but console log is")
+    `   
     printToDom(stringForm2, "formDiv");
     kidFunction('space','2ndspace');
 };
 
-// Below needs to pull the kids name from the input value and then
-// place it in the kidFunction as the kidName
-// take out the houseName parameter and it will pull from the Math.random() for house
-const formValue = document.getElementById("staticEmail2").value;
+//const formValue = document.getElementById("studentName").value;
 
-// This below needs to be generating list with a random house each time
-// Need to create an object/array of houses
-let kidFunction = (kidName,houseName) => {
-    const kidCardElem = document.getElementById("makeKidButton");
-    kidCardElem.addEventListener("click", function(){
-        let stringForm3 = `<div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">${kidName}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">${houseName}</h6>
-        </div>
-        <button type="submit" id="makeKidButton" class="btn btn-primary mb-2  mt-1 p-3">Expel</button>
-        </div> `
-        printToDom(stringForm3, "cardDiv")
-        console.log("This card thing is working");
-    });
-};
