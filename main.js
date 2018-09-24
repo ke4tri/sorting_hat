@@ -10,21 +10,35 @@ startButtonElem.addEventListener("click", function(){
     stringForm1();
 });
 
-// let kidFunction = (kidName,houseName) => {
+const activateDeletes = () => {
+    const deleteButtons = document.getElementsByClassName('expelKid');
+    console.log(deleteButtons);
+    for (let i = 0; i < deleteButtons.length; i++) {
+      const element = deleteButtons[i];
+      element.addEventListener("click", (e) => {
+        // remove card that the button was on
+        const buttonIClicked = e.target;
+        const cardToDelete = buttonIClicked.parentNode;
+        cardToDelete.remove();
+      })
+    }
+  }
+
 let kidFunction = () => {
     const kidCardElem = document.getElementById("makeKidButton");
     kidCardElem.addEventListener("click", function(){
         let formValue = document.getElementById("studentName").value;
-
+        let randomHouse = ["Gryffindor", "Hufflepuff","Ravenclaw", "Slytherin"][Math.floor(Math.random() * 4)]
         let stringForm3 = `<div class="card" style="width: 18rem;">
         <div class="card-body">
           <h5 class="card-title">${formValue}</h5>
-          <h6 class="card-subtitle mb-2 text-muted">${'place'}</h6>
+          <h6 class="card-subtitle mb-2 text-muted">${randomHouse}</h6>
         </div>
-        <button type="submit" id="makeKidButton" class="btn btn-primary mb-2  mt-1 p-3">Expel</button>
+        <button type="submit" id="expelKidButton" class=" expelKid btn btn-primary mb-2  mt-1 p-3">Expel</button>
         </div> `
         printToDom(stringForm3, "cardDiv")
         console.log("This card thing is working");
+        activateDeletes();
     });
 };
 
@@ -43,5 +57,4 @@ const stringForm1 = () => {
     kidFunction('space','2ndspace');
 };
 
-//const formValue = document.getElementById("studentName").value;
 
