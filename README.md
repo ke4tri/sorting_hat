@@ -28,6 +28,5 @@ Built With
 
 
 ## Authors
-* Billie Thompson - Initial work - PurpleBooth
-### See also the list of contributors who participated in this project.
+* Wayne Collier
 
