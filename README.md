@@ -16,11 +16,9 @@ Project Title
 
 Screen Shots
 Inline-style: 
-![alt text]( "Logo Title Text 1")
-![alt text]( "Logo Title Text 1")
-![alt text]( "Logo Title Text 1")
-
-
+![alt text]( https://github.com/ke4tri/sorting_hat/blob/master/img/Snip1.JPG "Logo Title Text 1")
+![alt text]( https://github.com/ke4tri/sorting_hat/blob/master/img/Snip2.JPG "Logo Title Text 1")
+![alt text]( https://github.com/ke4tri/sorting_hat/blob/master/img/Snip3.JPG "Logo Title Text 1")
 
 
 Built With
