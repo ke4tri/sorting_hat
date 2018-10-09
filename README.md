@@ -8,7 +8,6 @@
 
 ## You should make cards/tickets based on deliverable features, i.e. sorting hat jumbotron with get started button, click event to show form, sorting event to clear form and print student, expel student event.
 
-Project Title
 ### When ready, the user can click the "Lets Get Started" button.  A drop down box will appear and there the user
 ### can enter a student name.  Once entered, user can click the "Sort!" button.  This is where the users input will
 ### be sorted int a random house from the Harry Potter movie.
@@ -16,9 +15,9 @@ Project Title
 
 Screen Shots
 Inline-style: 
-![alt text]( https://github.com/ke4tri/sorting_hat/blob/master/img/Snip1.JPG "Logo Title Text 1")
+
+
 ![alt text]( https://github.com/ke4tri/sorting_hat/blob/master/img/Snip2.JPG "Logo Title Text 1")
-![alt text]( https://github.com/ke4tri/sorting_hat/blob/master/img/Snip3.JPG "Logo Title Text 1")
 
 
 Built With
